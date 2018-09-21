@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    font-family: montserrat;
+}
+
+.carousel {
+    position: relative;
+    width: 95%;
+    height: 50vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#clients .carousel {
+    height: 25vh;
+}
+.carousel:hover .slide:after,
+.carousel:hover .counter,
+.carousel:hover .slide:before {
+    opacity: 1;
+}
+
+.slide {
+    float: right;
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 400px;
+    background-color: #161616;
+    transition: opacity 0.4s;
+    opacity: 1;
+}
+
+.slide-container {
+    top: 0;
+    right: 0;
+    float: right;
+    position: absolute;
+    margin-top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: crosshair;
+}
+
+.slide-container:checked {
+    z-index: 8;
+}
+
+.slide-container:checked + .slide {
+    opacity: 0;
+}
+
+.slide-container:checked:nth-child(1):checked {
+    z-index: 9;
+}
+
+.slide-container:nth-child(1):checked {
+    float: left;
+    z-index: 9;
+}
+
+.slide-container:nth-child(1):checked + .slide {
+    opacity: 1;
+}
+
+.slide-container:nth-child(1):checked ~ .slide-container {
+    float: left;
+    z-index: 8;
+}
+
+.slide-container:nth-child(1):checked ~ .slide-container + .slide {
+    opacity: 0;
+}
+
+.slide-container:nth-child(1):checked ~ .slide-container:checked {
+    z-index: 9;
+}
+
+.slide-container:nth-child(1):checked ~ .slide-container:checked + .slide {
+    opacity: 1;
+}
