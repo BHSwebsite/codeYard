@@ -1,0 +1,200 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "lato";
+}
+
+body {
+    background: #fff;
+}
+
+.services__tagline {}
+
+.service-slider__parallax {
+    background: url(../images/services/1.jpg);
+    height: 100vh;
+}
+
+.pre-footer__parallax {
+    background: url(../images/services/10.jpg);
+    height: 80vh;
+    margin: 10vh 0;
+}
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.65;
+}
+
+.sevices__tagline h1 {
+    position: absolute;
+    color: #161616;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Lato";
+    letter-spacing: 0.5em;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+
+    display: block;
+    padding: 24px 48px;
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 50;
+    cursor: crosshair;
+    transition: 0.8s ease-out;
+}
+
+.btn:hover {
+    color: #101010;
+    cursor: crosshair;
+    text-decoration: none;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.btn:hover:before {
+    top: 0;
+}
+
+.section-header h1 {
+    font-family: "San Francisco Display Semibold", "lato";
+    color: #000;
+    padding: 0;
+    margin-top: 150px;
+    margin-left: 10vw;
+    font-size: 50px;
+    position: relative;
+    line-height: 50px;
+}
+
+.pricing-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing-options > container {
+    width: 25vw;
+    margin: 5vh;
+    font-size: 2vh;    
+    border: 1px solid #aaa;
+    border-top: 7px solid #000;
+    border-bottom: none;
+}
+
+
+.pricing-options > container:first-child {
+    margin-left: 10vw;
+}
+
+.pricing-options > container:last-child {
+    margin-right: 10vw;
+}
+
+.pricing-item {
+    padding: 2vw;
+    color: #000;
+}
+
+.pricing-item__header {
+    font-family: "San Francisco Display Semibold", "lato";
+    font-size: 35px;
+}
+
+.pricing-item__sub-header {
+    font-size: 20px;
+    font-family: "San Francisco Display", "lato";
+    font-weight: 500;
+}
+
+.pricing-item hr {
+    height: 1px;
+    background: #000;
+    width: 5vw;
+    /*    float: left;*/
+    display: block;
+    margin: 3vw;
+    transform: translate(-50%, 0);
+}
+
+.pricing-item__content {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+.pricing-item__buy {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #2bf4a1;
+    padding: 10px 15px;
+    color: #fff;
+    background: #2bf4a1;
+    transition: ease-out 0.5s;
+    text-decoration: none;
+}
+
+.pricing-item__buy:link {
+    text-decoration: none;
+}
+
+.pricing-item__buy:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pricing-item__buy:hover {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+.pricing-item__features ul {
+    margin: 5em 0;
+}
+
+.pricing-item__features ul li {
+    padding-left: 2.5em;
+    line-height: 2em;
+}
+
+.pricing-item__features ul li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -2.5em;
+    width: 2em;
+}
