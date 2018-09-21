@@ -1,0 +1,86 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: #646464;
+}
+
+.footer > div {
+/*    width: 15vw;*/
+    height: 50vh;
+    margin-top: 10vh;
+    font-size: 2vh;
+}
+
+.footer-text {
+    width: 10vw;
+}
+
+.footer-nav {
+    width: 7vw;
+}
+
+.footer-logo {
+    margin-left: 10vh;
+    width: 15vw;
+}
+
+.footer-logo-heading {
+    margin: 0;
+    padding: 0.15em 0;
+    border-radius: 15px;
+    
+    color: #fff;
+    font-size: 30px;
+    font-family: "lato";
+    font-weight: lighter;
+    background: #909090;
+    text-align: center;
+    width: 83%;
+}
+
+.footer-logo-tagline {
+    margin: 1em 0.5em;
+    padding: 0;
+    width: 75%;
+    font-size: 2.4vh;
+}
+
+.footer-heading {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.footer-explore ul, .footer-follow ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-explore ul li , .footer-follow ul li{
+    list-style: none;
+    display: block;
+    padding: 0.25em 0;
+}
+
+.footer-explore ul li:first-child, .footer-follow ul li:first-child {
+    margin-top: 0.75em;
+}
+
+.footer-explore a, .footer-follow a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+}
+
+.footer-explore a:hover, .footer-follow a:hover {
+    color: #232323;
+    cursor: crosshair;
+}
+
+.footer-visit-address {
+    margin-top: 1em;
+    width: 75%;
+}
+
