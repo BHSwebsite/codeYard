@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floper</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Code+Pro:300,400,600,700" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- slider and carousel -->
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- icons set -->
+    <link rel="stylesheet" href="css/fontello.css">
+    <!-- css-slide-show stylesheet -->
+    <link rel="stylesheet" href="css/slideshow.css">
+    <!-- custom main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <!--	Logo and menu
+****************************-->
+    <header class="header nav-bar content-container">
+        <div class="inner-header container blur">
+            <div class="header__logo">
+                <a href="index.html" class="logo__item"></a>
+            </div>
+
+            <button class="btn_nav"><i class="icon-menu"></i></button>
+
+            <nav class="navigation header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../CodeYard/index.html#about" class="nav__link"><span class="nav__item_underline"></span>About</a></li>
+                    <li class="nav__item"><a href="../CodeYard/services.html" class="nav__link"><span class="nav__item_underline"></span>Service</a></li>
+                    <li class="nav__item"><a href="../CodeYard/works.html" class="nav__link"><span class="nav__item_underline"></span>Works</a></li>
+                    <li class="nav__item"><a href="../CodeYard/clients.html" class="nav__link"><span class="nav__item_underline"></span>Clients</a></li>
+                    <li class="nav__item"><a href="../CodeYard/contact.html" class="nav__link"><span class="nav__item_underline"></span>Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--	Slider set
+*****************************-->
+    <!-- slider container -->
+    <div class="slider section">
+        <!-- slider item -->
+        <div class="slider__item">
+            <div class="slider__iframe__wrapper">
+                <video class="slider__item_video" autoplay src="video/1.mp4" loop></video>
+            </div>
+            <div class="slider__video_darcken"></div>
+            <div class="container">
+                <div class="slider__wrapper">
+                    <span class="item__text">Bringing Coder and Designers Together since 2010</span>
+                    <h1 class="item__text item__text_big">The Place to be for a Digital Creative.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--	Animated pointer
+*****************************-->
+    <div class="pointer pointer_bottom">
+        <div class="pointer__arrow pointer__arrow_top"></div>
+        <div class="pointer__line"></div>
+        <div class="pointer__arrow pointer__arrow_bottom"></div>
+    </div>
+
+
+    <!--	Works gallery
+*********************************-->
+    <section id="works" class="works section">
+        <div class="container">
+            <div class="row">
+                <!-- header and buttons of the gallery -->
+                <div class="works__header">
+                    <h2 class="col-xs-12 col-sm-3">Works</h2>
+                    <nav class="works__header__nav col-xs-12 col-sm-9">
+                        <button data-filter="*" class="works__nav__item works__nav__item_active"><span class="works__button_underline"></span>All</button>
+                        <button data-filter=".design" class="works__nav__item"><span class="works__button_underline"></span>Design</button>
+                        <button data-filter=".identy" class="works__nav__item"><span class="works__button_underline"></span>Identy</button>
+                        <button data-filter=".web" class="works__nav__item"><span class="works__button_underline"></span>Web</button>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <!-- gallery container -->
+                <div class="gallery__items">
+
+                    <!-- gallery item -->
+                    <div class="gallery__item gallery__item_1 col-xs-12 col-sm-6 web">
+                        <div class="gallery__item__hover">
+                            <span class="item__hover__line"></span><span class="item__hover__tag">Web design</span>
+
+                            <h3 class="item__hover__header"><a href="javascript:void">Unsplash notepad</a></h3>
+                            <h4 class="item__hover__header-small">Comfortable writting and reading</h4>
+
+                            <a href="images/works/1.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
+                                <img src="images/works/1.jpg" alt>
+                                +&nbsp;Zoom
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="gallery__item gallery__item_2 col-xs-12 col-sm-6 design">
+                        <div class="gallery__item__hover">
+                            <span class="item__hover__line"></span><span class="item__hover__tag">Design</span>
+
+                            <h3 class="item__hover__header"><a href="javascript:void">Red Strip bottle</a></h3>
+                            <h4 class="item__hover__header-small">How to make bottle design</h4>
+
+                            <a href="images/works/2.jpg" rel="nofollow" class="item__hover__zoom" title="Purple Web Page">
+                                <img src="images/works/2.jpg" alt>
+                                +&nbsp;Zoom
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="gallery__item gallery__item_3 col-xs-12 col-sm-6 identy">
+                        <div class="gallery__item__hover">
+                            <span class="item__hover__line"></span><span class="item__hover__tag">Identy</span>
+
+                            <h3 class="item__hover__header"><a href="javascript:void">Cookie and Coffee</a></h3>
+                            <h4 class="item__hover__header-small">Take a break</h4>
+
+                            <a href="images/works/3.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
+                                <img src="images/works/3.jpg" alt>
+                                +&nbsp;Zoom
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="gallery__item gallery__item_4 col-xs-12 col-sm-6 web">
+                        <div class="gallery__item__hover">
+                            <span class="item__hover__line"></span><span class="item__hover__tag">Web design</span>
+
+                            <h3 class="item__hover__header"><a href="javascript:void">Sheets of paper</a></h3>
+                            <h4 class="item__hover__header-small">Getting correct information</h4>
+
+                            <a href="iimages/works/4.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
+                                <img src="images/works/4.jpg" alt>
+                                +&nbsp;Zoom
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="gallery__item gallery__item_5 col-xs-12 col-sm-6 design">
+                        <div class="gallery__item__hover">
+                            <span class="item__hover__line"></span><span class="item__hover__tag">Design</span>
+
+                            <h3 class="item__hover__header"><a href="javascript:void">Magazines</a></h3>
+                            <h4 class="item__hover__header-small">Nice reading</h4>
+
+                            <a href="images/works/5.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
+                                <img src="images/works/5.jpg" alt>
+                                +&nbsp;Zoom
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="gallery__item gallery__item_6 col-xs-12 col-sm-6 identy">
+                        <div class="gallery__item__hover">
+                            <span class="item__hover__line"></span><span class="item__hover__tag">Identy</span>
+
+                            <h3 class="item__hover__header"><a href="javascript:void">Design of stores</a></h3>
+                            <h4 class="item__hover__header-small">Design your store</h4>
+
+                            <a href="images/works/6.jpg" rel="nofollow" class="item__hover__zoom" title="Coffee Web Site">
+                                <img src="images/works/6.jpg" alt>
+                                +&nbsp;Zoom
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+  
+</body>
+
+</html>
