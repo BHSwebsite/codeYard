@@ -1032,13 +1032,26 @@ iframe {
     flex-direction: row;
 }
 
+.flex-header {
+    padding: 0 5vh;
+}
+
 .flex-container > div {
     width: 25vw;
-    margin: 5vh;
+    margin: 5vh 0;
     font-size: 2vh; 
 }
 
 
+.flex-text {
+    padding: 0 5vh;
+    font-size: 18px;
+}
+
+.side-borders {
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
 
 /*clients *******************************/
 
