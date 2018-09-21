@@ -2,6 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
+    font-family: "lato";
 }
 
 body {
@@ -21,10 +22,6 @@ body {
     margin: 10vh 0;
 }
 
-.services__slider {
-    margin-left: 20vh;
-}
-
 .parallax {
     position: relative;
     background-attachment: fixed;
@@ -37,47 +34,59 @@ body {
 .sevices__tagline h1 {
     position: absolute;
     color: #161616;
-    top: 35%;
-    left: 20vh;
-    transform: translate(0, -50%);
-    font-family: "SF-medium";
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Lato";
+    letter-spacing: 0.5em;
     font-weight: 700;
-    font-size: 70px;
-}
-
-.services-slider__text{
-    position: absolute;
-/*    display: block;*/
-    top: 67%;
-    margin-left 20vh;
-    font-family: SF-light;
-    font-size: 20px;
+    font-size: 45px;
 }
 
 .btn {
     position: absolute;
-    top: 85%;
-    left: 10%;
-    color: #fff;
-    background: #2bf4a1;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
 
     display: block;
-    padding: 15px 35px;
-    font-family: SF;
+    padding: 24px 48px;
+    font-family: raleway;
     font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.2em;
-    text-transform: capitalize;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 50;
     cursor: crosshair;
     transition: 0.8s ease-out;
-    text-align:center;
 }
 
 .btn:hover {
     color: #101010;
-    background: #fff;
     cursor: crosshair;
     text-decoration: none;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.btn:hover:before {
+    top: 0;
 }
 
 .section-header h1 {
@@ -183,13 +192,9 @@ body {
 }
 
 .pricing-item__features ul li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
     display: inline-block;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.7em;
-    margin-left: -1.5em;
-    margin-bottom: -0.2em;
-    content: "";
-    background: url("../images/services/tick.png") no-repeat 0 0;
-    background-size: 100%;
+    margin-left: -2.5em;
+    width: 2em;
 }

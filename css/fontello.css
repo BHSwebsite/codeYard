@@ -9,41 +9,16 @@
   font-weight: normal;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'SF-black';
-  src: url('../font/SF-font/SanFranciscoDisplay-Black.ttf');
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?10337825#fontello') format('svg');
+  }
 }
-
-@font-face {
-  font-family: 'SF-light';
-  src: url('../font/SF-font/SanFranciscoDisplay-Light.ttf');
-}
-@font-face {
-  font-family: 'SF-medium';
-  src: url('../font/SF-font/SanFranciscoDisplay-Medium.ttf');
-}
-
-@font-face {
-  font-family: 'SF';
-  src: url('../font/SF-font/SanFranciscoDisplay-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'SF-semibold';
-  src: url('../font/SF-font/SanFranciscoDisplay-Semibold.ttf');
-}
-
-@font-face {
-  font-family: 'SF-thin';
-  src: url('../font/SF-font/SanFranciscoDisplay-Thin.ttf');
-}
-
-@font-face {
-  font-family: 'SF-ultralight';
-  src: url('../font/SF-font/SanFranciscoDisplay-Ultralight.ttf');
-}
-
+*/
  
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
