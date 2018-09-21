@@ -1,7 +1,7 @@
 # codeYard
-Website for MIlap
+Website for Milap
 
-Ayush: Works
-Adi: About
-Abhik: finsishing->
+Ayush: Works  
+Adi: About  
+Abhik: finishing->
   - Current: Services.
