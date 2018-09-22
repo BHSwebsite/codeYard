@@ -1,0 +1,145 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+h1.heading {
+    display: block;
+    z-index: 45;
+    color: #fff;
+    position: absolute;
+    top: 15vh;
+    margin-left: 1.7vw;
+    padding: 15px 0;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery > div {
+    width: 26vw;
+    height: 100vh;
+    /*
+    font-size: 15vh; 
+    text-align: center;
+*/
+}
+
+.gallery-item:hover {
+    width: 35vw;
+}
+
+.gallery-bg {
+    height: 102vh;
+    width: 26vw;
+    z-index: 90;
+    margin: 0 -5px;
+}
+
+.gallery-bg-1 {
+    background: url(../images/about/evelina-friman-335669-unsplash.jpg);
+    background-size: cover;
+    transition: 0.3s ease;
+    filter: grayscale(100) brightness(40%);
+
+}
+
+.gallery-bg-2 {
+    background: url(../images/about/4.png);
+    background-size: cover;
+    transition: 0.3s ease;
+    filter: grayscale(100) brightness(40%);
+}
+
+.gallery-bg-3 {
+    background: url(../images/about/3.png);
+    background-size: cover;
+    transition: 0.3s ease;
+    filter: grayscale(100) brightness(40%);
+}
+
+.gallery-bg-4 {
+    background: #101010;
+    transition: 0.3s ease;
+    margin: -5px;
+}
+
+.gallery-bg:hover {
+    filter: blur(3px) grayscale(1) brightness(80%);
+    width: 35vw;
+}
+
+.gallery-item__title {
+    display: block;
+    padding: 5px;
+    padding-left: 20px;
+    font-family: SF;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 35px;
+    color: #fff;
+    top: 70vh;
+    margin-left: 4.2vw;
+    transition: 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item__title {
+    margin-left: 8.8vw;
+    background: #fff;
+    color: #000;
+}
+
+.gallery-item__pos {
+    position: absolute;
+    top: 90vh;
+    margin-left: 8.7vw;
+    color: rgba(0, 0, 0, 0);
+    /*    color: #fff;*/
+    font-size: 30px;
+    font-family: SF-light;
+    /*    animation: sick-appear 0.5s;*/
+    -webkit-transition: .5s ease-in-out;
+    padding-bottom: 2px;
+}
+
+.gallery-item:hover .gallery-item__pos {
+    color: #fff;
+    width: auto;
+    border-bottom: 2px solid #2bf4a1;
+}
+
+.gallery-item__text {
+    display: block;
+    position: absolute;
+    top: 35vh;
+    width: 20vw;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0);
+    /*    color: #fff;*/
+    font-family: SF-ultralight;
+    margin-left: 9vw;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s ease;
+    transition-delay: 0.3s;
+}
+
+.gallery-item:hover .gallery-item__text {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.hover-disappear {
+    position: absolute;
+    top: 50vh;
+    width: 10vw;
+    color: #aaa;
+    font-family: sf;
+}
